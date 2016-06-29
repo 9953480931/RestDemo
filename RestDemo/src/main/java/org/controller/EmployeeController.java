@@ -34,6 +34,7 @@ public class EmployeeController {
 		employee.setName(name);
 		this.empService.save(employee);
 		System.out.println(employee.toString());
+		System.out.println("Test");
 
 	}
 
