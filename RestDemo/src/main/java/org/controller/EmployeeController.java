@@ -6,6 +6,7 @@ import javax.ws.rs.FormParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
 
 import org.bean.Employee;
 import org.service.EmployeeService;
@@ -25,13 +26,13 @@ public class EmployeeController {
 	@POST
 	@Path("/add")
 
-	// @Consumes(MediaType.APPLICATION_JSON)
-	public void add(@FormParam("id") int id, @FormParam("name") String name)
+	 @Consumes("application/json")
+	public void add(/*@FormParam("id") int id, @FormParam("name") String name*/ Employee employee)
 
 	{
-		Employee employee = new Employee();
-		employee.setId(id);
-		employee.setName(name);
+	//	Employee employee = new Employee();
+		//employee.setId(id);
+		//employee.setName(name);
 		this.empService.save(employee);
 		System.out.println(employee.toString());
 		System.out.println("Test");

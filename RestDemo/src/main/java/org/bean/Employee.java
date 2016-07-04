@@ -2,11 +2,13 @@
  * 
  */
 package org.bean;
-
+import javax.xml.bind.annotation.XmlRootElement;
 /**
  * @author jaspreet.singh1
  *
  */
+
+/*@XmlRootElement(name = "Employee")*/
 public class Employee {
 	private int id;
 	private String name;

@@ -22,6 +22,9 @@
 		<jaxrs:serviceBeans>
 			<bean  class="org.controller.EmployeeController" />
 		</jaxrs:serviceBeans>
+		 <jaxrs:providers>
+            <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+        </jaxrs:providers>
 	</jaxrs:server>
 
 </beans>
