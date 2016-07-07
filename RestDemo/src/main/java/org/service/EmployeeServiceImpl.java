@@ -36,4 +36,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 		this.empDao.update(employee);
 	}
 
+	public Employee viewAll(Employee employee) {
+		// TODO Auto-generated method stub
+		return this.empDao.viewAll(employee);
+	}
+
 }

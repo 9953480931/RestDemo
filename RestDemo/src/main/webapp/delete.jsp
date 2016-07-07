@@ -7,7 +7,7 @@
 <title>Delete</title>
 </head>
 <body>
-<form action="/RestDemo/rest/employee/delete">
+<form action="/RestDemo/rest/employee/delete" >
 <input type="hidden" name="_method" value="DELETE">
 Enter id : <input type="text" name="id" /><br><br>
 <input type="submit" value="submit" >

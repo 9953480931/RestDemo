@@ -9,5 +9,6 @@ public interface EmployeeService {
 	void deleteById(Employee employee);
 
 	void update(Employee employee);
-
+	
+	public Employee viewAll(Employee employee);
 }

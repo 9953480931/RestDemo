@@ -9,5 +9,7 @@ public interface EmployeeDao {
 	void delete(Employee employee);
 
 	void update(Employee employee);
+	
+	public Employee viewAll(Employee employee);
 
 }
